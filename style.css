@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.container {
+  display: flex;
+  height: 110vh;
+  width: 90%;
+ 
+}
+
+.left-panel {
+  width: 50%;
+  background-color: #002062;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  width: 300px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.left-panel h2 {
+  margin-bottom: 25px;
+
+}
+
+.input-group {
+  background-color: #10276b;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.input-group i {
+  color: #aabbee;
+  margin-right: 10px;
+}
+
+.input-group .eye-icon {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.input-group input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
+
+.forgot {
+  margin-bottom: 15px;
+  display: inline-block;
+  color: #d0d0ff;
+  text-decoration: none;
+  
+}
+
+.btn {
+  padding: 12px;
+  background-color: #4671C6A6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #9B9B9B;
+  margin-top: 10px;
+ 
+  
+ 
+}
+
+.or hr {
+  flex: 1;
+  border: none;
+  height: 1px;
+  background: #9B9B9B;
+  
+}
+
+
+
+
+.btn.google {
+  background-color: #0F2D6B;
+  margin-top: 30px;
+}
+
+.btn.facebook {
+  background-color: #0F2D6B;
+}
+
+.btn.apple {
+  background-color: #0F2D6B;
+}
+
+.or {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.bottom-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bottom-text a {
+  color: #99cfff;
+  text-decoration: none;
+}
+
+.right-panel {
+  width: 50%;
+
+}
+
+.right-panel img {
+  width: 122%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+    background-color: #002062;
+  }
+
+  .container {
+    flex-direction: column;
+    height: 100vh;
+    overflow: scroll;
+    padding-left: 50px;
+  }
+
+  .left-panel {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+
+  }
+
+  .or{
+    margin-top: 40px;
+  }
+
+  .btn.google{
+    margin-top: 20px;
+  }
+
+
+  .right-panel {
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .right-panel img {
+    display: none;
+  }
+}
